@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Data types
+var x=5;
+var y=10;
+z=x+y;
+console.log(z);
+//
+let x1=16+4+"javascript";
+console.log(x1);
+//
+let x2="javascript"+200+44;
+console.log(x2);
+//functions
+function myFunction(p1,p2){
+     return p1+p2;
+}
+//
+console.log(myFunction(10,20));
+function tocelsius(f){ 
+  return (5/9)*(f-32);
+}console.log(tocelsius(80));
+//
+function mod(n1,n2){
+  return n1%n2;
+}
+  var sum=mod;
+  var result=mod(240,6);
+  console.log(result);
+//arrays
+ const arr=['BMW','AUDI','TESLA','VOLVO'];
+console.log(arr);
+console.log(arr[0]);
+console.log(arr[1]);
+console.log(arr[2]);
+console.log(arr[3]);
+console.log(arr[4]);
+arr[0]='HYUNDAI';
+console.log(arr[0]);
+console.log(arr);
+console.log(arr.length);
+//loops
+//if loop//
+i=30;
+    if(i>10 && i<50){
+        console.log('small numbers');
+    }else{
+        console.log('large numbers');
+    }
+//for //
+    for(i=12;i%2;i++){
+        console.log(i);
+    }       
+var number = prompt("enter a number");
+  if(number>0){
+    console.log("number is positive");
+  }else if(number=0){
+    console.log("number is zero");
+  }else{
+    console.log("number is negative");
+  }
+  //
+  var value = +prompt("enter a value");
+   switch(value){
+      case 1:console.log("january");
+      break;
+      case 2:
+      console.log("february");
+      break;
+      case 3:
+      console.log("march");
+      break;
+      case 4:
+      console.log("april");
+      break;
+      case 5:
+      console.log("may");
+      break;
+      case 6:
+      console.log("june");
+      break;
+    default:console.log("invalid input");
+  }
+ //array methods//
+ var cars=['bmw','hyndai','honda','suzuki'];
+cars.shift();
+console.log(cars);
+cars.push('mg');
+console.log(cars);
+cars.pop('honda');
+cars.unshift("tesla");
+console.log(cars);
+var cars=['bmw','hyndai','honda','suzuki'];
+var bikes=['rider','mt','ktm'];
+bikes.splice(1,'bullet');
+var mix=bikes.slice(1);
+bikes.reverse();
+console.log(bikes);
+
+ //join method//
+  const cars=['BMW','VOLVO','MG HECTOR'];
+  console.log(cars.join('*'));
+  //
+  var a=[2,34,56,78];
+  var b=a;
+  a.push(10);
+  console.log(a);
+  console.log(b);
+//objects//
+var object={
+  name:"hemanth",
+  job:"ase",
+  color:"black",
+};console.log(object.name);
+console.log(object.job);
+console.log(object.job+object.name);
+//
+var person={};
+person.job='software';
+person.type='nv';
+person.age='22';
+console.log(person.job);
+//
+var person = {
+  firstName: "John",
+  lastName: "Doe",
+  age:50,
+  eyeColor: "blue"
+};
+console.log(person);
+var x = person;
+x.age = 10;
+console.log(""+person.firstName+person.age+person.eyeColor);
+//constructor
+function person(fname,lname,age){
+  this.firstName=fname;
+  this.lastName=lname;
+  this.Age=age;  
+}
+var a=new Person("hemanth","kumar2",22);
+console.log(a);
+console.log(a.firstName);
+console.log(a.lastName);
+console.log(a.Age);
+
+a.fullname=function(){
+  console.log("the full name is"+a.firstName+a.lastName);
+}
+
+  Person.prototype.fullname=function(){
+    console.log("the full name is"+this.firstName+this.lastName);
+  }
+//prototype
+function Person(first,last,age,color){
+  this.fname=first;
+  this.fname=last;
+  this.fname=age;
+  this.fname=color;
+}
+Person.prototype.office='qualminds';
+console.log(person);
+    </script>
+
+</body>
+</html>
